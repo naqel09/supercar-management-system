@@ -32,13 +32,13 @@ export default function Hero() {
                     </span>
                 </h1>
 
-                <p className="max-w-xl text-lg md:text-xl text-white/50 font-medium leading-relaxed mb-12">
+                <p className="max-w-xl text-lg md:text-xl text-white/50 font-medium leading-relaxed mb-5">
                     Engineering excellence meets pure adrenaline. Discover our
                     curated selection of the world's most prestigious automotive
                     masterpieces.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 mb-4">
                     <button className="bg-red-800 hover:bg-red-700 text-white px-10 py-4 rounded-md text-xs font-black uppercase tracking-widest transition-all shadow-[0_10px_20px_rgba(153,27,27,0.2)]">
                         Explore Inventory
                     </button>
