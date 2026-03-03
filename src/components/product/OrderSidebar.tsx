@@ -8,7 +8,7 @@ const features = [
 
 export default function OrderSidebar() {
     return (
-        <div className="bg-[#1a0505]/40 backdrop-blur-3xl p-8 rounded-3xl border border-red-900/10 shadow-2xl flex flex-col items-start relative overflow-hidden">
+        <div className="bg-[#1a0505] backdrop-blur-xl p-8 rounded-3xl border border-red-900 shadow-2xl flex flex-col items-start relative overflow-hidden">
             {/* Visual Accent */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-red-800/5 blur-[80px] -z-10"></div>
 

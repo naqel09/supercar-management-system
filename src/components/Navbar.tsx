@@ -47,10 +47,15 @@ export default function Navbar() {
                     <Search className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/50" />
                 </div>
                 <div className="flex items-center gap-5">
-                    <button className="relative p-1 hover:text-red-700 transition-colors group">
-                        <Heart className="w-5 h-5" />
-                        <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-700 rounded-full scale-0 group-hover:scale-100 transition-transform"></span>
-                    </button>
+                    <Link
+                        href="/favorites"
+                        className="relative p-1 hover:text-red-600 text-white/70 transition-colors group"
+                    >
+                        <Heart className="w-5 h-5 group-hover:fill-red-600 transition-all" />
+                        <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-700 rounded-full flex items-center justify-center text-[8px] font-black">
+                            3
+                        </span>
+                    </Link>
                     <Link
                         href="/cart"
                         className="relative p-1 hover:text-red-700 transition-colors group"

@@ -13,6 +13,7 @@ import {
     MapPin,
     Car,
 } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
     title: "Dashboard | LuxeAuto",
@@ -37,26 +38,7 @@ export default function DashboardPage() {
                 </Link>
 
                 {/* Nav Links */}
-                <div className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
-                    <Link
-                        href="/inventory"
-                        className="hover:text-red-500 transition-colors"
-                    >
-                        Inventory
-                    </Link>
-                    <Link
-                        href="/about"
-                        className="hover:text-red-500 transition-colors"
-                    >
-                        About Us
-                    </Link>
-                    <Link
-                        href="/contact"
-                        className="hover:text-red-500 transition-colors"
-                    >
-                        Contact
-                    </Link>
-                </div>
+                <Navbar/>
 
                 {/* Right Actions */}
                 <div className="flex items-center gap-4">
@@ -79,7 +61,7 @@ export default function DashboardPage() {
             {/* Dashboard Layout */}
             <div className="flex flex-1 overflow-hidden">
                 {/* Sidebar */}
-                <aside className="w-64 bg-[#160404] border-r border-white/5 hidden lg:flex flex-col">
+                <aside className="w-64 bg-[#160404] border-r border-red-700 hidden lg:flex flex-col">
                     {/* User Snippet */}
                     <div className="p-8 flex items-center gap-4 border-b border-white/5">
                         <div className="w-12 h-12 rounded-full border border-red-900/50 bg-gradient-to-tr from-red-600 to-red-900 flex items-center justify-center shadow-lg relative">
@@ -146,7 +128,7 @@ export default function DashboardPage() {
                 <div className="flex-1 overflow-y-auto p-6 md:p-10 bg-[#110404]">
                     <div className="max-w-5xl mx-auto space-y-8">
                         {/* Top Profile Banner Card */}
-                        <div className="bg-[#1a0505] rounded-3xl border border-red-900/20 overflow-hidden shadow-2xl">
+                        <div className="bg-[#1a0505] rounded-3xl border border-red-700 overflow-hidden shadow-2xl">
                             {/* Inner Info Section */}
                             <div className="p-8 pb-0 flex flex-col md:flex-row items-center md:items-start justify-between gap-6 relative">
                                 <div className="flex flex-col md:flex-row items-center md:items-center gap-6 z-10">
@@ -244,7 +226,7 @@ export default function DashboardPage() {
 
                             <div className="flex flex-col gap-4">
                                 {/* Transaction Item 1 */}
-                                <div className="bg-[#1a0505] border border-red-900/20 hover:border-red-900/40 transition-colors rounded-2xl p-4 flex items-center justify-between gap-6 group">
+                                <div className="bg-[#1a0505] border border-red-900 hover:border-red-900/40 transition-colors rounded-2xl p-4 flex items-center justify-between gap-6 group">
                                     <div className="flex items-center gap-6">
                                         <div className="w-32 h-20 rounded-xl overflow-hidden relative shadow-lg bg-black shrink-0">
                                             <Image
@@ -279,7 +261,7 @@ export default function DashboardPage() {
                                 </div>
 
                                 {/* Transaction Item 2 */}
-                                <div className="bg-[#1a0505] border border-red-900/20 hover:border-red-900/40 transition-colors rounded-2xl p-4 flex items-center justify-between gap-6 group">
+                                <div className="bg-[#1a0505] border border-red-900 hover:border-red-900/40 transition-colors rounded-2xl p-4 flex items-center justify-between gap-6 group">
                                     <div className="flex items-center gap-6">
                                         <div className="w-32 h-20 rounded-xl overflow-hidden relative shadow-lg bg-black shrink-0">
                                             <Image
